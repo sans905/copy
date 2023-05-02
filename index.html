@@ -1,1 +1,11 @@
-
+<html>
+<title>Copier</title>
+<input id="myInput" type="text">
+<input type="button" value="Copy" onclick="copy()">
+<script>
+function copy() {
+document.querySelector('#myInput').select();
+document.execCommand('copy');
+}
+</script>
+</html>
